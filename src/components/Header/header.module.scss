@@ -1,3 +1,20 @@
-h1 {
-    color: red;
+
+
+header { display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        background-color: #fff;
+    button {
+        background-color: #00a676;
+        font-size: 12px;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+               
+    }
+
+    img{
+        height: 75px;  
+    }
+
 }
