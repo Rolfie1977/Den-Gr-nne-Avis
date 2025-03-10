@@ -1,0 +1,31 @@
+footer{display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: #00A676;
+
+    div{width: 50%;}
+
+    h3{ color:#fff}
+
+
+.leftDiv{button{background-color: #1D8439;
+    color:#fff;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    width: 100%;
+
+    
+    }
+    input{padding: 10px 20px;
+        border: none;
+        width: 80%;
+        
+    }
+}
+    
+.rightDiv{a{color:#fff;}
+}
+
+}
+

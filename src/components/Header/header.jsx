@@ -31,6 +31,8 @@ function header() {
         <NavLink to="">I</NavLink>
         <NavLink to="">Account</NavLink>
 
+        
+
     </header>
   )
 }
