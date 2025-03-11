@@ -1,6 +1,8 @@
 import React from 'react'
 import style from './Frontpage.module.scss'
 import heroBillede from "../../assets/herobillede.jpg"
+import Cards from '../../components/Cards/cards'
+
 
 function Frontpage() {
   return (
@@ -9,7 +11,7 @@ function Frontpage() {
         <hr></hr>
         <h2>Udvalgte produkter</h2>
         <article>
-            placeholder
+            <Cards/>
         </article>
 
         <hr></hr>
