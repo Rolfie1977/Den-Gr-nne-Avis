@@ -1,6 +1,9 @@
 import React from 'react'
 import style from './Frontpage.module.scss'
 import heroBillede from "../../assets/herobillede.jpg"
+import Cards from '../../components/Cards/cards'
+import CardsKategori from '../../components/CardsKategori/cardsKategori'
+
 
 function Frontpage() {
   return (
@@ -9,8 +12,8 @@ function Frontpage() {
         <hr></hr>
         <h2>Udvalgte produkter</h2>
         <article>
-            placeholder
-        </article>
+            <Cards/>
+                  </article>
 
         <hr></hr>
 {/* Template string bruges til at hente det importeret billede */}
@@ -29,15 +32,15 @@ Grønne Avis
         </h2>
         <article>
 
-          placeholder
+          <CardsKategori/>
         </article>
 
-        <article>
+        <article className={style.donationArticle} >
           <div>
             <h3>Donationer til Dato</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
-            <p className="donationNum">452.231.50 kr</p>
+            <p className= {style.donationNum}>452.231.50 kr</p>
 
             <p>Tak fordi du handler brugt, med omtanke for klimaet</p>
 
@@ -48,7 +51,7 @@ Grønne Avis
           <h3>Donationer til Dato</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
-            <p className="donationNum">112.542.75 kr</p>
+            <p className={style.donationNum}>112.542.75 kr</p>
 
             <p>Tak fordi du handler brugt, med omtanke for klimaet</p>
 
