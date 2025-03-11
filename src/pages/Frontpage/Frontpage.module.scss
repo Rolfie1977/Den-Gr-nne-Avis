@@ -1,9 +1,10 @@
+
 .mainArea {
 
     hr {
         border: none;
         height: 2px;
-        background-color: #00a676; 
+        background-color: #1D8439; 
         margin: 20px 0;
     }
 
@@ -26,6 +27,32 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    
+
 
 }
+.donationArticle{
+    padding: 0px 10px;
+    
+    div:first-of-type{background-image: url("../../assets/banner_image2.jpg");
+    
+        background-size: cover;
+        background-position: center}
+
+    
+    div:last-of-type{background-image: url("../../assets/banner_image3.jpg");
+    
+    background-size: cover;
+    background-position: center;
+    }
+
+
+.donationNum{
+    color: #1D8439;
+    text-align: right;
+    font-size: 32px;
+}
+}
+
+
 }

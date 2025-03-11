@@ -32,12 +32,12 @@ Grønne Avis
           placeholder
         </article>
 
-        <article>
+        <article className={style.donationArticle} >
           <div>
             <h3>Donationer til Dato</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
-            <p className="donationNum">452.231.50 kr</p>
+            <p className= {style.donationNum}>452.231.50 kr</p>
 
             <p>Tak fordi du handler brugt, med omtanke for klimaet</p>
 
@@ -48,7 +48,7 @@ Grønne Avis
           <h3>Donationer til Dato</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
-            <p className="donationNum">112.542.75 kr</p>
+            <p className={style.donationNum}>112.542.75 kr</p>
 
             <p>Tak fordi du handler brugt, med omtanke for klimaet</p>
 
