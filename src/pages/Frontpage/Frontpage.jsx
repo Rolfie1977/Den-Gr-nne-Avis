@@ -2,6 +2,7 @@ import React from 'react'
 import style from './Frontpage.module.scss'
 import heroBillede from "../../assets/herobillede.jpg"
 import Cards from '../../components/Cards/cards'
+import CardsKategori from '../../components/CardsKategori/cardsKategori'
 
 
 function Frontpage() {
@@ -12,7 +13,7 @@ function Frontpage() {
         <h2>Udvalgte produkter</h2>
         <article>
             <Cards/>
-        </article>
+                  </article>
 
         <hr></hr>
 {/* Template string bruges til at hente det importeret billede */}
@@ -31,7 +32,7 @@ Grønne Avis
         </h2>
         <article>
 
-          placeholder
+          <CardsKategori/>
         </article>
 
         <article className={style.donationArticle} >
