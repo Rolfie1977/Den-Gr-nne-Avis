@@ -1,18 +1,70 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Frontpage.module.scss'
 import heroBillede from "../../assets/herobillede.jpg"
 import Cards from '../../components/Cards/cards'
 import CardsKategori from '../../components/CardsKategori/cardsKategori'
+import axios from 'axios'
+
 
 
 function Frontpage() {
+
+  const [data, setData] = useState([])
+  const [data2, setData2] = useState([])
+
+  useEffect(() => {
+
+    axios .get ("http://localhost:4242/products")
+
+    .then((response)=>{
+
+      setData(response.data.data)
+
+      console.log(response.data)
+
+    })
+
+    .catch((error)=> {
+    
+    })
+    
+  
+    axios .get ("http://localhost:4242/categories")
+
+    .then((response)=>{
+
+      setData2(response.data.data)
+
+      console.log(response.data)
+
+    })
+
+    .catch((error)=> {
+    
+    })
+    
+      
+    
+  }, [])
+  
+
   return (
     <section className = {style.mainArea}>
 
         <hr></hr>
         <h2>Udvalgte produkter</h2>
         <article>
-            <Cards/>
+            {/* En mapping som vælger de 6 føreste items i data via en ternary operator */}
+            {data.map((item,index)=>(index <6? <Cards
+            
+            image={item.image}
+            title={item.name}
+            
+            />:null ))
+
+
+            }
+
                   </article>
 
         <hr></hr>
@@ -32,7 +84,15 @@ Grønne Avis
         </h2>
         <article>
 
-          <CardsKategori/>
+        {data2.map((item,index)=>(index <6? <CardsKategori
+            
+            image={item.category_image}
+            title={item.name}
+            
+            />:null ))
+
+
+            }
         </article>
 
         <article className={style.donationArticle} >
