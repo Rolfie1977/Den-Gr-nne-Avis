@@ -1,4 +1,5 @@
 import React from 'react'
+import CardsKategoriPage2 from '../../components/CardsKategoriPage2/CardsKategoriPage2'
     
 
 function Kategoripage() {
@@ -24,7 +25,7 @@ function Kategoripage() {
 
 <article>
 
-
+<CardsKategoriPage2/>
 </article>
 
     </section>
