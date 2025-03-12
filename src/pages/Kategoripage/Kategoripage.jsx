@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardsKategoriPage2 from '../../components/CardsKategoriPage2/CardsKategoriPage2'
+import axios from 'axios'
     
 
 function Kategoripage() {
+
+const [data, setData] = useState([])
+useEffect(() => {
+  axios .get('http://localhost:4242/products/category/cykler')
+  
+  .then((response) => {
+    console.log(response.data);
+
+    setData(response.data)
+    
+  })
+  .catch((error) => {
+
+    alert(error)
+    
+  })
+ 
+}, [])
+
+
   return (
     <section>
 <hr />
