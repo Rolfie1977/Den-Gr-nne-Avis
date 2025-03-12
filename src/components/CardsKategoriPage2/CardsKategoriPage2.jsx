@@ -2,15 +2,17 @@ import React from 'react'
 import style from "./CardsKategoriPage2.module.scss"
 
 
-function CardsKategoriPage2() {
+function CardsKategoriPage2(props) {
     // React fracment sættes ind
   return ( <> 
-    <div className={style.cardsDiv}><p>placeholder text</p></div>
+    <div style={{backgroundImage:`url(${props.image})`}} className={style.cardsDiv}><p>{props.price}</p></div>
 
-    <p> Overskrift</p>
+    <p> {props.title} </p>
 
 
-    <p>Tekst</p>
+   <p>{props.text}</p>
+
+   
 
     </>
   )
