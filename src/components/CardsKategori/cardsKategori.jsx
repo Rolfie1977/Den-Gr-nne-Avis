@@ -3,9 +3,9 @@ import style from "./cardsKategori.module.scss"
 
 
 
-function cardsKategori() {
+function cardsKategori(props) {
   return (
-    <div className={style.cardsKategoriDiv}><p>placeholder text</p></div>
+    <div style={{backgroundImage: `url(${props.image})`}} className={style.cardsKategoriDiv}><p>{props.title}</p></div>
   )
 }
 

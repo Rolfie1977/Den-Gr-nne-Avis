@@ -3,9 +3,11 @@ import style from "./cards.module.scss"
 
 
 
-function cards() {
+function cards(props) {
   return (
-    <div className={style.cardsDiv}><p>placeholder text</p></div>
+    <div style={{backgroundImage:`url(${props.image})`}} className={style.cardsDiv}><p> {props.title} </p>
+    
+    </div>
   )
 }
 
