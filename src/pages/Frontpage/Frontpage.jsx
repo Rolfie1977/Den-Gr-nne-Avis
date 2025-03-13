@@ -110,7 +110,7 @@ Grønne Avis
           </div>
 
           <div>
-          <h3>Donationer til Dato</h3>
+          <h3>Donationer i år</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
             <p className={style.donationNum}>112.542.75 kr</p>

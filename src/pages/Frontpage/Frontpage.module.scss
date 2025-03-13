@@ -108,4 +108,20 @@
 
 
    }
+
+   .donationArticle{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    div{
+        background-size: contain;
+        margin: 7px 7px;
+        
+
+
+    }
+   }
+
     }
