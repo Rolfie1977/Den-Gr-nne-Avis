@@ -10,6 +10,9 @@ header { display: grid;
         color: #fff;
         border: none;
         padding: 10px 20px;
+        width: 90%;
+        height: 75%;
+        margin-top: 10px;
                
     }
 
@@ -24,10 +27,19 @@ header { display: grid;
         padding: 10px 10px;
         margin-bottom: 10px;
         margin-top: 10px;
+        width: 100%;
 
 
     }
 
-
-
+    
 }
+
+@media only screen and (min-width: 1280px) {
+    header{
+
+        display: grid;
+        grid-template-columns: 40% 20% 15% 5% 10% 5%;
+
+    }
+     }

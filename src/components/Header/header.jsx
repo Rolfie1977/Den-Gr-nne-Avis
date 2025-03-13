@@ -12,6 +12,7 @@ function header() {
 
         <img src={logo} alt="logo" />
         <select name="" id="">
+          <option value="">Vælg Kategori</option>
             <option value="">Camping</option>
             <option value="">Elektronik</option>
             <option value="">Have og byg</option>
