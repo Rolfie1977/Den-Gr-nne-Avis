@@ -26,6 +26,18 @@
     padding: 10px 5px;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    p{
+        color: #fff;
+        font-size: 20px;
+        
+    }
+
+    h1{
+        color:#fff;
+        font-size: 36px;
+        font-weight: 400;
+    }
 
     
 
@@ -62,3 +74,54 @@
 
 
 }
+
+@media only screen and (min-width: 992px) {
+
+    .heroArticle{
+
+
+    }
+
+   .produktArticle{
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    div{
+        height: 200px;
+
+    }
+
+       }
+    
+       .kategoriArticle{
+
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+        div{
+            height: 200px;
+    
+        }
+
+
+   }
+
+   .donationArticle{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    div{
+        background-size: contain;
+        margin: 7px 7px;
+        
+
+
+    }
+   }
+
+    }

@@ -29,3 +29,31 @@ footer{display:grid;
 
 }
 
+@media only screen and (min-width: 992px) {
+    footer{
+
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        .leftDiv{
+
+            form{
+
+                display:flex;
+                
+                
+            button{
+
+                width: 50%;
+
+
+                }
+
+
+            }
+
+        
+
+        }
+
+    }
+     }

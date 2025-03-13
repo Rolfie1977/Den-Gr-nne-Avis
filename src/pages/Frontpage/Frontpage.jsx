@@ -53,7 +53,7 @@ function Frontpage() {
 
         <hr></hr>
         <h2>Udvalgte produkter</h2>
-        <article>
+        <article className={style.produktArticle}>
             {/* En mapping som vælger de 6 føreste items i data via en ternary operator */}
             {data.map((item,index)=>(index <6? <Cards
             
@@ -82,7 +82,7 @@ Grønne Avis
         <h2>
           Populære Kategorier
         </h2>
-        <article>
+        <article className= {style.kategoriArticle}>
 
         {data2.map((item,index)=>(index <6? <CardsKategori
             
@@ -94,6 +94,8 @@ Grønne Avis
 
             }
         </article>
+
+        <hr></hr>
 
         <article className={style.donationArticle} >
           <div>
@@ -108,7 +110,7 @@ Grønne Avis
           </div>
 
           <div>
-          <h3>Donationer til Dato</h3>
+          <h3>Donationer i år</h3>
             <p>Sammen med dig har vi siden starten indsamlet:</p>
 
             <p className={style.donationNum}>112.542.75 kr</p>
