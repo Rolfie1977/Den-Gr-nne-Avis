@@ -32,18 +32,24 @@
 
 }
 .donationArticle{
-    padding: 0px 10px;
+    // padding: 0px 10px;
     
     div:first-of-type{background-image: url("../../assets/banner_image2.jpg");
     
         background-size: cover;
-        background-position: center}
+        background-position: center;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    
+    }
 
     
     div:last-of-type{background-image: url("../../assets/banner_image3.jpg");
     
     background-size: cover;
     background-position: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
     }
 
 
