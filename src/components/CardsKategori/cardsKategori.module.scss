@@ -1,14 +1,20 @@
 .cardsKategoriDiv{
 
     height: 300px;
+    margin-bottom: 10px;
     // border: solid 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
     
 
     p{
         background-color: #00A676;
-        opacity: 75%;
         padding: 10px 5px;
         margin: 0;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: underline;
     }
 
 }
+
