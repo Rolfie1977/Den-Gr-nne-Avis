@@ -10,7 +10,7 @@ function header() {
   return (
     <header className = {style.header} >
 
-        <img src={logo} alt="logo" />
+        <NavLink to={"/"}><img src={logo} alt="logo" /> </NavLink>
         <select name="" id="">
           <option value="">Vælg Kategori</option>
             <option value="">Camping</option>

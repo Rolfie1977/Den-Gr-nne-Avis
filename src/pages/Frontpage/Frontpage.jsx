@@ -88,7 +88,7 @@ Grønne Avis
             
             image={item.category_image}
             title={item.name}
-            
+            kat={item.slug}
             />:null ))
 
 

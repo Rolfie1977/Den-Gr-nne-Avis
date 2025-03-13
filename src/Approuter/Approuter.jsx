@@ -7,7 +7,7 @@ function Approuter() {
   return (
     <Routes>
         <Route index element={<Frontpage/>}></Route> 
-        <Route path={"/kategori"} element={<Kategoripage/>}></Route>
+        <Route path={"/kategori/:id"} element={<Kategoripage/>}></Route>
     </Routes>
   )
 }

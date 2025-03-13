@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import CardsKategoriPage2 from '../../components/CardsKategoriPage2/CardsKategoriPage2'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 
     
 
 function Kategoripage() {
 
-const [currentKategori, setCurrentKategori] = useState("camping")
+  const kat = useParams() 
+console.log(kat);
+// ternary operator som ser om kat.id har en værdi, hvis ikke vælges camping
+const [currentKategori, setCurrentKategori] = useState(kat.id || "camping")
 
 const [data, setData] = useState([])
 useEffect(() => {
