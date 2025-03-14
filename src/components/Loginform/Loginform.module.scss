@@ -1,0 +1,65 @@
+.loginStyling {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 80vh;
+	padding-top: 100px;
+
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+
+		label {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 16px;
+			input {
+				width: 100%;
+				padding: 16px;
+				color: black;
+				background-color: white;
+				border: 2px solid green;
+			}
+		}
+
+		input {
+			width: 50%;
+			padding: 16px;
+		}
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.loginStyling {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 80vh;
+		padding-top: 100px;
+
+		form {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+
+			label {
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 16px;
+				input {
+					width: 100%;
+					padding: 16px;
+					color: black;
+					background-color: white;
+					border: 2px solid green;
+				}
+			}
+
+			input {
+				width: 25%;
+				padding: 16px;
+			}
+		}
+	}
+}
