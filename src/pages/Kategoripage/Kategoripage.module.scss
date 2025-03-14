@@ -1,15 +1,25 @@
+.mainArticle {
+	display: grid;
 
-.mainArticle{
-               display: grid;
-    grid-template-columns: 20% 80%;
-    
-    article {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 30px;
-        border: none;
-    }
+	article {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+		border: none;
+		
+	}
+}
 
+@media only screen and (min-width: 992px) {
+	.mainArticle {
+		display: grid;
+		grid-template-columns: 20% 80%;
 
-
+		article {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 30px;
+			border: none;
+		}
+	}
 }
