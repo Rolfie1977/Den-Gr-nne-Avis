@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CardsKategoriPage2 from '../../components/CardsKategoriPage2/CardsKategoriPage2'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import style from "./Kategoripage.module.scss"
 
     
 
@@ -37,8 +38,10 @@ useEffect(() => {
     <section>
 <hr />
 <h2>Alle Kategorier</h2>
+<article className={style.mainArticle}>
 <ul>
   {/* anonym function */}
+  
 <li value=""onClick={()=>{setCurrentKategori("camping")}}>Camping</li>
             <li value=""onClick={()=>{setCurrentKategori("elektronik")}}>Elektronik</li>
             <li value=""onClick={()=>{setCurrentKategori("have-og-byg")}}>Have og byg</li>
@@ -72,7 +75,7 @@ text={item.description}
 }
 
 </article>
-
+</article>
     </section>
   )}
 export default Kategoripage

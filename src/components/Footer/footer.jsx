@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './footer.module.scss'
 
-function footer() {
+function Footer() {
   return (
     <footer>
       <div className={style.leftDiv}> 
@@ -36,4 +36,4 @@ direkte til verdensmål nr. 13; Klimahandling</p>
   )
 }
 
-export default footer
+export default Footer

@@ -6,7 +6,7 @@ import letter from '../../assets/letter.png'
 import info from '../../assets/info.png'
 import profile from '../../assets/profile.png'
 
-function header() {
+function Header() {
   return (
     <header className = {style.header} >
 
@@ -33,7 +33,7 @@ function header() {
 
         <NavLink to=""><img src={letter} alt="letter" /></NavLink>
         <NavLink to=""><img src={info} alt="info" /></NavLink>
-        <NavLink to=""><img src={profile} alt="profile" /></NavLink>
+        <NavLink to="/login"><img src={profile} alt="profile" /></NavLink>
 
         
 
@@ -41,4 +41,4 @@ function header() {
   )
 }
 
-export default header
+export default Header

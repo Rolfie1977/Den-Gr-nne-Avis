@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Approuter from './Approuter/Approuter'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import Header from './components/Header/header'
+import Footer from './components/Footer/footer'
 
 
 
@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      
       <Header/>
       <Approuter />
       <Footer/>
